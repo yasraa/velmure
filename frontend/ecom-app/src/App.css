@@ -1,0 +1,18 @@
+
+
+/* index.css or variables.css */
+:root {
+  --primary-color: #D9DFF2;
+  --secondary-color: #EAC9C1;
+  --accent-color: #CBBACC;
+  --text-dark: #2B2B2B;
+  --bg-light: ivory;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button:hover{
+  cursor: pointer;
+}

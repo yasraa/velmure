@@ -1,0 +1,101 @@
+@font-face{
+    font-family: 'Vogue-Regular';
+  src: url('../assets/Vogue-Regular.woff2') format('woff2'),
+       url('../assets/Vogue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.checkout{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    color: #4B2E4C;
+    justify-content: center;
+    overflow-x: hidden;
+    align-items: center;
+    padding-top: 40px;
+}
+.checkout-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 10px 30px;
+}
+.shipping-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 35vw;
+}
+.checkout-content input{
+    background: transparent;
+    padding-left: 10px;
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    text-transform: capitalize;
+    border: 1px solid black;
+}
+.payment-details,.card-details-row{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.checkout-content input:focus{
+     border: 2px solid #1F1F1F; /* your brand color */
+  outline: none;             /* removes default blue glow */
+  box-shadow: 0 0 0 4px rgba(203, 186, 204, 0.2); /* soft glow */
+}
+.checkout-content input:-webkit-autofill {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.1) inset !important;
+  -webkit-text-fill-color: #4B2E4C !important; /* match your brand color */
+  transition: background-color 5000s ease-in-out 0s;
+}
+.checkout-content input:hover{
+    box-shadow: #1F1F1F ;
+}
+.payment-methods{
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+}
+.order-details{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+
+
+.checkout-cart-item{
+    display: flex;
+    padding: 10px;
+    border: 1px solid  black;
+    margin: 5px;
+    width: 30vw;
+    gap: 20px;
+}
+@media(max-width:786px){
+    .checkout{
+        height: fit-content;
+    }
+    .order-details{
+        width: 100%;
+    }
+    .checkout-cart-item{
+        width: 100%;
+    }
+    .checkout-content{
+        flex-wrap: wrap-reverse;
+        gap: 23px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .shipping-details{
+        width: 80vw;
+    }
+}

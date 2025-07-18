@@ -1,0 +1,42 @@
+@font-face{
+    font-family: 'Vogue-Regular';
+  src: url('../assets/Vogue-Regular.woff2') format('woff2'),
+       url('../assets/Vogue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.redirec{
+    background-color: rgb(240, 230, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+    color: #4B2E4C;
+}
+.red-cont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "Vogue-Regular";
+    font-size: 30px;
+    gap: 20px;
+}
+.red-cont .p{
+    text-align: center;
+}
+.redirec button{
+    border: 1px solid #4B2E4C;
+    background: transparent;
+    padding: 7px 30px;
+    border-radius: 40px;
+    font-size: 20px;
+    color: #4B2E4C;
+}
+.redirec button:hover{
+    background-color: #4B2E4C;
+    color: wheat;
+}

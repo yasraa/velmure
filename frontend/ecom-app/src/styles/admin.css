@@ -1,0 +1,73 @@
+@font-face{
+    font-family: 'Vogue-Regular';
+  src: url('../assets/Vogue-Regular.woff2') format('woff2'),
+       url('../assets/Vogue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.admin{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.admin form{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.v-order{
+    background: transparent;
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 20px 0px;
+}
+.admin h2{
+    width: 100%;
+    font-family: "Vogue-Regular";
+    text-align: center;
+    font-size: 50px;
+}
+.admin input{
+     background: transparent;
+    padding-left: 10px;
+    height: 30px;
+    width: 250px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.admin input:-webkit-autofill {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.1) inset !important;
+  -webkit-text-fill-color: #4B2E4C !important; /* match your brand color */
+  transition: background-color 5000s ease-in-out 0s;
+}
+.admin input:hover{
+    box-shadow: #1F1F1F ;
+}
+.admin h3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+@media(max-width:786px){
+    .admin{
+        justify-content: center;
+        align-items: center;
+    }
+    hr{
+        display: none;
+    }
+    .admin form{
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

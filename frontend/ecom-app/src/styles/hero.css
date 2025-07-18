@@ -1,0 +1,64 @@
+@font-face{
+    font-family: 'Vogue-Regular';
+  src: url('../assets/Vogue-Regular.woff2') format('woff2'),
+       url('../assets/Vogue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hero{
+    font-family: 'Vogue-Regular',sans-serif;
+    height: 90vh;
+   background-color: var(--bg-light);
+   color: #4B2E4C;
+}
+.hero-content{
+   background-image: url('../assets/coni.png');
+   background-attachment: fixed;
+  background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 12vh;
+    height: 85vh;
+   border-radius: 30px;
+}
+.main{
+     /* background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px); */
+  width: 100%;
+  height: 100%;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main h1{
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.main p{
+margin-bottom: 10px;
+font-family: sans-serif;
+font-weight: bolder;
+}
+.main button{
+    background-color: #4B2E4C;
+    color: #eddbe3;
+    padding: 10px 25px;
+    font-size: 16px; 
+    border: none;
+    border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .main h1{
+    font-size: 50px;
+  }
+  .main{
+    padding: 0px 20px;
+  }
+}

@@ -1,0 +1,117 @@
+@font-face{
+    font-family: 'Vogue-Regular';
+  src: url('../assets/Vogue-Regular.woff2') format('woff2'),
+       url('../assets/Vogue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title{
+    font-size: 50px;
+    font-family: "Vogue-Regular";
+    margin-top: 10px;
+}
+.pcard{
+    border: 1px solid wheat;
+    background: transparent;
+    color: wheat;
+    font-size: 18px;
+    padding: 10px 48px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.kjj{
+    padding-left: 30px;
+    height:86%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-kjj ul{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+margin-top: 10px;
+}
+.left-kjj ul li{
+    list-style: none;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    color: #4B2E4C;
+    padding: 9px;
+    border-radius: 50%;
+    height: 30px;
+}
+.top-kjj{
+    width: 70%;
+}
+.llm{
+    padding: 30px 0px;
+    width: 100%;
+    color: #4B2E4C;
+    font-size: 50px;
+    font-family: "Vogue-Regular";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kms{
+display: flex;
+gap: 40px;
+}
+.gjk {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #4B2E4C;
+  color: wheat;
+  z-index: 1000;
+  width: 90vw;
+  height: 85vh;
+  display: flex;
+}
+.gjk img{
+    width: 40%;
+    object-fit: cover;
+}
+.kmj {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .kms{
+        flex-direction: column;
+    }
+    .gjk{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .kmj{
+        justify-content:center;
+    }
+    .minb{
+        position: absolute;
+        top: 0px;
+        right: 3px;
+    }
+    .title{
+        font-size:40px;
+    }
+    .kjj{
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .gjk img{
+        width: 100%;
+    }
+}

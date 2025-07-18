@@ -1,0 +1,58 @@
+@font-face{
+    font-family: 'Vogue-Regular';
+  src: url('../assets/Vogue-Regular.woff2') format('woff2'),
+       url('../assets/Vogue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.delivery{
+    height: fit-content;
+    color:  #4B2E4C;
+ padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.delivery h1{
+  margin-top: 20px;
+  font-size: 50px;
+  font-family: "Vogue-Regular";
+}
+.delivery-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.car{
+    width: 90%;
+    height: 37px;
+    border-bottom:  #4B2E4C solid 1px;
+}
+.delivery-item{
+  height: 20vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+border-radius: 20px;
+    margin-top: 20px;
+    border: 1px solid  #4B2E4C;
+    padding: 10px;
+}
+.icon{
+  margin-right: 10px;
+}
+@media(max-width:786px){
+  .delivery-item{
+    width: 100%;
+    height: fit-content;
+  }
+}

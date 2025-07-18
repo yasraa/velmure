@@ -1,0 +1,22 @@
+.orders-wrapper{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.order-card{
+border: 1px solid black;
+padding: 10px;
+
+}
+.orderss{
+    padding: 30px;
+}
+.orderss h2{
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+ul li{
+    list-style: none;
+}

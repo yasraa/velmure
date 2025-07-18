@@ -1,0 +1,40 @@
+.contact{
+    height: 70vh;
+    background-color: #eddbe3;
+    padding-top:40px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color:#4B2E4C;
+    flex-direction: column;
+}
+.links{
+    background-color: black;
+    height: 20vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+    align-items: center;
+}
+.s-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12px;
+    width: 10vw;
+}
+.s-links li{
+list-style: none;
+}
+.phn-num{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

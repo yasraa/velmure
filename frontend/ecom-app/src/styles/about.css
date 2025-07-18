@@ -1,0 +1,67 @@
+@font-face{
+    font-family: 'Vogue-Regular';
+  src: url('../assets/Vogue-Regular.woff2') format('woff2'),
+       url('../assets/Vogue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.about{
+    height: 100vh;
+    transform: 20px;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.left-side{
+    width: 40%;
+    height: fit-content;
+    margin: 20px;
+    color: #4B2E4C;
+    height: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    
+}
+.left-side h1{
+    font-size: 50px;
+    font-family: 'Vogue-Regular';
+}
+.right-side{
+   
+    width: 40%;
+ height: 95%;
+ margin: 20px;
+background-image: url('../assets/about.png');
+background-size: cover;
+
+}
+.bottom-paragraph{
+    text-align: end;
+}
+
+
+
+
+@media(max-width:786px){
+.about{
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100vw;
+    justify-content: center;
+}
+.left-side{
+    width: 90vw;
+    height: fit-content;
+    gap: 30px;
+    padding-bottom: 0px;
+    margin: 20px 0px;
+}
+.right-side{
+    width: 80vw;
+    height: 42vh;
+}
+}

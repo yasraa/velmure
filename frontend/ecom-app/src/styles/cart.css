@@ -1,0 +1,112 @@
+@font-face{
+    font-family: 'Vogue-Regular';
+  src: url('../assets/Vogue-Regular.woff2') format('woff2'),
+       url('../assets/Vogue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.cart{
+    color: #4B2E4C;
+}
+.carth{
+    padding-top: 30px;
+    font-size: 50px;
+    color: #4B2E4C;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Vogue-Regular";
+}
+.cart-products{
+    width: 50vw;
+}
+
+.prod-cart-details{
+   display: flex;
+   width:100%;
+   justify-content: space-between;
+   margin-left: 10px;
+   text-transform: capitalize;
+}
+.cross-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.cart-calculation{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.promo-code input{
+    background: transparent;
+    margin-top: 10px;
+    border: 1px solid #4B2E4C;
+}
+.checkout-btn{
+    background: transparent;
+background: transparent;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #4B2E4C;
+    color: #4B2E4C;
+}
+.gb{
+    border: none;
+    border-bottom: 1px solid #4B2E4C;
+    background: transparent;
+    height: 40px;
+}
+.cross-price button{
+    background: transparent;
+    border: none;
+}
+.promo-btn{
+    background: transparent;
+    border: 1px solid #4B2E4C;
+    color: #4B2E4C;
+    padding: 5px;
+}
+.Pin{
+    display: flex;
+}
+.calc-total .pin{
+display: flex;
+margin-bottom: 10px;
+width: 100%;
+justify-content: space-between;
+}
+.calc-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.cc{
+    background: transparent;
+    padding: 10px 30px;
+    font-size: 14px;
+    background-color: #4B2E4C;
+    color:ivory;
+}
+.summary{
+font-family: "Vogue-Regular";
+margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+.cart-products{
+    width: 88vw;
+}
+.cart{
+    gap: 20px;
+}
+.cart-calculation{
+    height: fit-content;
+}
+.summary{
+    margin-top: 20px;
+}
+}

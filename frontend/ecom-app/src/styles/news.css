@@ -1,0 +1,94 @@
+@font-face{
+    font-family: 'Vogue-Regular';
+  src: url('../assets/Vogue-Regular.woff2') format('woff2'),
+       url('../assets/Vogue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.newssignup{
+    height: fit-content;
+    background-color: #4B2E4C;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    color: wheat;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    opacity: 0;
+}
+.newssignup h2{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.news-img{
+    height: 40vh;
+    width: 38vw;
+   }
+.news-img img{
+    background-size: fixed;
+    width: 100%;
+    height: 100%;
+}
+.news-content{
+ display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.news-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.news-form form input{
+    width: 350px;
+    border-radius: 20px;
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid wheat;
+    color: wheat;
+    background: transparent;
+}
+.news-form form input:focus{
+     border: 2px solid #1F1F1F; /* your brand color */
+  outline: none;             /* removes default blue glow */
+  box-shadow: 0 0 0 4px rgba(203, 186, 204, 0.2); /* soft glow */
+}
+
+.news-form input:-webkit-autofill {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.1) inset !important;
+  -webkit-text-fill-color: #4B2E4C !important; /* match your brand color */
+  transition: background-color 5000s ease-in-out 0s;
+}
+.news-form form input:hover{
+    box-shadow: #1F1F1F ;
+}
+
+.btn{
+    width: 180px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid wheat;
+    color: wheat;
+    background-color: #4B2E4C;
+}
+@media (max-width: 768px) {
+    .newssignup h2{
+        text-align: center;
+    }
+    .news-img {
+        height: 20vh;
+    width: 88vw;
+    }
+}

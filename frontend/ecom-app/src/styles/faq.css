@@ -1,0 +1,77 @@
+@font-face{
+    font-family: 'Vogue-Regular';
+  src: url('../assets/Vogue-Regular.woff2') format('woff2'),
+       url('../assets/Vogue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.faq{
+    height: 100vh;
+    padding-top: 10vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #4B2E4C;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    flex-direction: column;
+}
+.faq h1{
+      font-size: 50px;
+    margin-top: 15px;
+    font-family: 'Vogue-Regular';
+}
+.faq-img{
+    width: 370px;
+    height: 70vh;
+    opacity: 0;
+    background-color: azure;
+}
+.faq-img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.faq-container{
+    width: 100%;
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+}
+.faq-item {
+    opacity: 0;
+}
+.faq-item li{
+    width: 40vw;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    height: 15vh;
+    align-items: center;
+}
+.hidden{
+    display:none
+}
+.faq-btn{
+    font-size: 50px;
+    height: fit-content;
+    padding: 0px;
+}
+@media (max-width: 768px) {
+    .faq{
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+    .faq-container{
+        flex-wrap: wrap;
+    }
+    .faq-img{
+        display: none;
+    }
+    .faq-item li{
+        width: 100%;
+        height: 9vh;
+    }
+}

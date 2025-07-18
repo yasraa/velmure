@@ -1,0 +1,122 @@
+@font-face{
+    font-family: 'Vogue-Regular';
+  src: url('../assets/Vogue-Regular.woff2') format('woff2'),
+       url('../assets/Vogue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.seller{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: #4B2E4C;
+}
+
+.seller h1{
+    font-size:50px;
+    margin: 20px;
+    margin-bottom: 0px;
+    font-family: 'Vogue-Regular';
+}
+.cat-card{
+
+    width: 300px;
+display: flex;
+flex-direction: column;
+}
+.cat-card p{
+    font-size: 15px;
+    font-family: serif;
+    text-align: center;
+    margin-top: 15px;
+}
+.product{
+    width: 100%;
+}
+
+.seller p{
+    margin-bottom: 38px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.best-selling-products{
+    width: 78vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+    gap: 4rem;
+    padding-bottom: 10px;
+}
+.best-selling-products .product{
+height: 40vh;
+width: 23vw;
+}
+.catalog{
+    height: fit-content;
+    padding-top: 10vh;
+}
+.products{
+    height: fit-content;
+    color: #4B2E4C;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+        position: relative;
+    z-index: 1;
+}
+.products h2{
+    font-size: 50px;
+    font-family: 'Vogue-Regular';
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.seller-img{
+    height: 100%;
+    width: 100%;
+}
+.prod{
+    border: 2px solid #4B2E4C;
+    background: transparent;
+    color: #4B2E4C;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    margin-top: 5px;
+}
+.seller h1, .cat-card ,.products h2,.animation{
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .seller {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .best-selling-products {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .best-selling-products .product {
+        width: 100%;
+        height: 30vh;
+    }
+    .cat-card{
+        width: 74vw;
+    }
+    .cat-card img{
+        width: 100%;
+    }
+    
+}

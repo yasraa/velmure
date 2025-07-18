@@ -1,0 +1,88 @@
+
+.login{
+    width: 100vw;
+    height: 100vh;
+background-image: url('../assets/coni.png');
+background-size:cover;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #4B2E4C;
+background-color: ivory;
+}
+.r-s {
+    backdrop-filter: blur(8px) saturate(164%);
+    -webkit-backdrop-filter: blur(8px) saturate(164%);
+    background-color: rgba(203, 186, 204, 0.29);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    width: fit-content;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: -3px 1px 16px 0px rgba(105,99,99,0.75);
+-webkit-box-shadow: -3px 1px 16px 0px rgba(105,99,99,0.75);
+-moz-box-shadow: -3px 1px 16px 0px rgba(105,99,99,0.75);
+}
+.r-s form button{
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    border-radius: 20px;
+    border: 2px solid #4B2E4C;
+    background-color: transparent;
+    color: #4B2E4C;
+}
+.r-s p{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 8px;
+}
+.r-s h2{
+    font-size: 35px;
+}
+.r-s form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.r-s form input{
+    width: 37vw;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #4B2E4C;
+    background-color: transparent;
+    padding-left: 15px;
+    color:#4B2E4C
+}
+.r-s form input:focus{
+     border: 2px solid #1F1F1F; /* your brand color */
+  outline: none;             /* removes default blue glow */
+  box-shadow: 0 0 0 4px rgba(203, 186, 204, 0.2); /* soft glow */
+}
+.r-s input:-webkit-autofill {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.1) inset !important;
+  -webkit-text-fill-color: #4B2E4C !important; /* match your brand color */
+  transition: background-color 5000s ease-in-out 0s;
+}
+.r-s form input:hover{
+    box-shadow: #1F1F1F ;
+}
+.pp{
+    padding-top: 17px;
+}
+
+@media(max-width:786px){
+    .r-s form input{
+        width: 85vw;
+    }
+}
